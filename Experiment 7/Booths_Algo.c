@@ -66,3 +66,36 @@ int main() {
 
     return 0;
 }
+/*
+Output:
+Enter the multiplicand (M) (4-bit signed integer): 5
+Enter the multiplier (Q) (4-bit signed integer): 4
+Initial values:
+A: 0000
+Q: 0100
+Q-1: 0
+
+Step 1: Arithmetic Shift Right
+A: 0000
+Q: 0010
+Q-1: 0
+
+Step 2: Arithmetic Shift Right
+A: 0000
+Q: 0001
+Q-1: 0
+
+Step 3: A = A + M
+A: 0101
+Q: 0000
+Q-1: 1
+
+Step 4: Arithmetic Shift Right
+A: 0010
+Q: 1000
+Q-1: 0
+
+Final result: 20
+Binary result: 00010100
+
+*/
